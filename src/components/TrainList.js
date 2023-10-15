@@ -11,7 +11,6 @@ const TrainList = ({ color, data }) => {
       {filteredData.map((train, index) => (
         <Train key={index} data={train} />
       ))}
-      {/* Nonfunctional buttons */}
       <button>Arriving</button>
       <button>Scheduled</button>
       <button>{color === 'green' || color === 'blue' ? 'Eastbound' : 'Northbound'}</button>
